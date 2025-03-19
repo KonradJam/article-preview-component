@@ -1,0 +1,62 @@
+//Devices
+$viewport-mobile: 375px;
+$viewport-tablet: 768px;
+$viewport-desktop: 1440px;
+
+// Colors
+$color-grey-200: #ecf2f8;
+$color-grey-400: #9daec2;
+$color-grey-500: #6e8098;
+$color-grey-900: #48556a;
+$color-white: #ffffff;
+
+// Spacing (in pixels)
+$spacing-0: 0;
+$spacing-200: 16px;
+$spacing-300: 24px;
+$spacing-400: 32px;
+$spacing-500: 40px;
+$spacing-600: 48px;
+$spacing-700: 56px;
+$spacing-800: 64px;
+$spacing-1300: 104px;
+$spacing-2000: 160px;
+
+// Typography
+$font-family: 'Manrope', sans-serif;
+
+// Text Presets
+$text-preset-1: (
+  'font-family': $font-family,
+  'font-size': 1.25rem,
+  'font-weight': 700,
+  'font-style': normal,
+  'letter-spacing': .0156rem,
+  'line-height': 130%,
+  'text-transform': none,
+  'text-decoration': none
+);
+
+
+
+$text-preset-2: (
+  'font-family': $font-family,
+  'font-size': .8125rem,
+  'font-weight': 500,
+  'font-style': normal,
+  'letter-spacing': 0.12%,
+  'line-height': 140%,
+  'text-transform': none,
+  'text-decoration': none
+);
+
+$text-preset-3: (
+  'font-family': $font-family,
+  'font-size': .8125rem,
+  'font-weight': 500,
+  'font-style': normal,
+  'letter-spacing': 25%,
+  'line-height': 140%,
+  'text-transform': uppercase,
+  'text-decoration': none
+);

@@ -1,0 +1,145 @@
+/* RESET - Start */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*RESET - stop*/
+body {
+  display: flex;
+  align-items: center;
+  block-size: 100dvh;
+  background-color: #ecf2f8;
+  margin-inline: clamp(1rem, -1.8625954198rem + 12.213740458vi, 4rem);
+}
+
+.article-preview {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.article-preview__image {
+  inline-size: 100%;
+  block-size: 200px;
+  object-fit: cover;
+}
+.article-preview__content {
+  padding-inline: 32px;
+  padding-block: 32px 16px;
+}
+.article-preview__title {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.0156rem;
+  line-height: 130%;
+  text-transform: none;
+  text-decoration: none;
+  color: #48556a;
+  margin-block-end: 24px;
+}
+.article-preview__description {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.12%;
+  line-height: 140%;
+  text-transform: none;
+  text-decoration: none;
+  color: #6e8098;
+  margin-block-end: 48px;
+}
+.article-preview__author-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article-preview__author-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  column-gap: 16px;
+}
+.article-preview__avatar {
+  block-size: 40px;
+  inline-size: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  grid-row: 1/span 2;
+}
+.article-preview__author {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.12%;
+  line-height: 140%;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: #48556a;
+}
+.article-preview__date {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.12%;
+  line-height: 140%;
+  text-transform: none;
+  text-decoration: none;
+  color: #9daec2;
+}
+.article-preview__share {
+  padding: 8px 11px;
+  border: none;
+  border-radius: 50%;
+}
+.article-preview__share-icon {
+  width: 15px;
+  height: 13px;
+  background-color: #ecf2f8;
+}
+
+@media (min-width: 48rem) {
+  .article-preview {
+    flex-direction: row;
+  }
+  .article-preview__image {
+    block-size: 100%;
+    max-inline-size: 14.3125rem;
+  }
+}

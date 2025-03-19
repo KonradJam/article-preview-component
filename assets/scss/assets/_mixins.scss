@@ -1,0 +1,6 @@
+// Text Preset Mixin
+@mixin text-preset($preset) {
+    @each $property, $value in $preset {
+      #{$property}: $value;
+    }
+}

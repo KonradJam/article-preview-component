@@ -1,0 +1,14 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch --update --no-source-map assets/scss:assets/css"
+  },
+  "author": "KonradJam",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}

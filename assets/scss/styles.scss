@@ -1,0 +1,100 @@
+@use "assets/reset";
+@use "assets/variables" as *;
+@use "assets/mixins" as *;
+@use "assets/fluid-typography" as *;
+
+body {
+    display: flex;
+    align-items: center;
+    block-size: 100dvh;
+    background-color: $color-grey-200;
+    margin-inline: clamp-size($spacing-200, $spacing-800, $viewport-mobile, $viewport-tablet);
+}
+
+.article-preview {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__image {
+        inline-size: 100%;
+        block-size: 200px;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding-inline: $spacing-400;
+        padding-block: $spacing-400 $spacing-200;
+    }
+
+    &__title {
+        @include text-preset($text-preset-1);
+        color: $color-grey-900;
+        margin-block-end: $spacing-300;
+    }
+
+    &__description {
+        @include text-preset($text-preset-2);
+        color: $color-grey-500;
+        margin-block-end: $spacing-600;
+    }
+
+    &__author-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__author-section-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, auto);
+        column-gap: $spacing-200;
+    }
+
+    &__avatar {
+        block-size: 40px;
+        inline-size: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        grid-row: 1 / span 2;
+    }
+
+    &__author {
+        @include text-preset($text-preset-2);
+        font-weight: 700;
+        color: $color-grey-900;
+    }
+
+    &__date {
+        @include text-preset($text-preset-2);
+        color: $color-grey-400;
+    }
+
+    &__share {
+        padding: 8px 11px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    &__share-icon {
+        width: 15px;
+        height: 13px;
+        background-color: $color-grey-200;
+    }
+}
+
+@media (min-width: 48rem) {
+    .article-preview {
+        flex-direction: row;
+
+        &__image {
+            block-size: 100%;
+            max-inline-size: 14.3125rem;
+        }
+    }
+}
+
+
