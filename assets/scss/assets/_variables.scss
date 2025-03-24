@@ -12,15 +12,15 @@ $color-white: #ffffff;
 
 // Spacing (in pixels)
 $spacing-0: 0;
-$spacing-200: 16px;
-$spacing-300: 24px;
-$spacing-400: 32px;
-$spacing-500: 40px;
-$spacing-600: 48px;
-$spacing-700: 56px;
-$spacing-800: 64px;
-$spacing-1300: 104px;
-$spacing-2000: 160px;
+$spacing-200: 1rem;          // 16px
+$spacing-300: 1.5rem;        // 24px
+$spacing-400: 2rem;          // 32px
+$spacing-500: 2.5rem;        // 40px
+$spacing-600: 3rem;          // 48px
+$spacing-700: 3.5rem;        // 56px
+$spacing-800: 4rem;          // 64px
+$spacing-1300: 6.5rem;       // 104px
+$spacing-2000: 10rem;        // 160px
 
 // Typography
 $font-family: 'Manrope', sans-serif;
@@ -44,7 +44,7 @@ $text-preset-2: (
   'font-size': .8125rem,
   'font-weight': 500,
   'font-style': normal,
-  'letter-spacing': 0.12%,
+  'letter-spacing': calc(.8125rem * 0.12),
   'line-height': 140%,
   'text-transform': none,
   'text-decoration': none
@@ -55,7 +55,7 @@ $text-preset-3: (
   'font-size': .8125rem,
   'font-weight': 500,
   'font-style': normal,
-  'letter-spacing': 25%,
+  'letter-spacing': calc(.8125rem * 0.25),
   'line-height': 140%,
   'text-transform': uppercase,
   'text-decoration': none
