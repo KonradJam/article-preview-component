@@ -20,7 +20,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-Live Site URL: [GitHub Pages]()
+Live Site URL: [GitHub Pages](https://konradjam.github.io/article-preview-component/)
 
 ## My process
 
