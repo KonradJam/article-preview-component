@@ -80,13 +80,15 @@ body {
         padding: 8px 11px;
         border: none;
         border-radius: 50%;
+        transition: .3s;
+        cursor: pointer;
     }
 
     &__share-icon {
         width: .9375rem;
         height: .8125rem;
         fill: $color-grey-500;
-        // transition: .3s;
+        transition: .3s;
     }
 
     &__share:hover {
@@ -103,13 +105,17 @@ body {
     display: flex;
     position: absolute;
     background-color: $color-grey-900;
-    right: 0;
-    bottom: -4.6875rem;
-    inline-size: 100%;
-    block-size: 4.6875rem;
     padding-inline-start: $spacing-400;
     align-items: center;
-    transition: .3s bottom;
+
+
+    &--mobile {
+        right: 0;
+        bottom: -4.6875rem;
+        inline-size: 100%;
+        block-size: 4.6875rem;
+        transition: .3s bottom;
+    }
 
     &--show-mobile {
         bottom: 0;
@@ -122,6 +128,7 @@ body {
         border-radius: 10px;
         right: -4.85rem;
         bottom: 4.5rem;
+        box-shadow: 0 4px 4px rgba(0,0,0, .15);
         transition: .3s opacity, .3s bottom;
     }
 
@@ -134,6 +141,7 @@ body {
         rotate: 45deg;
         bottom: -.6rem;
         left: calc(7.5rem - .6rem);
+        box-shadow: 0 4px 4px rgba(0,0,0, .15);
     }
 
     &--show-desktop {
@@ -154,6 +162,11 @@ body {
         text-decoration: none;
         font-size: 1.25rem;
         margin-inline-end: $spacing-200;
+        transition: .3s;
+    }
+
+    &__link:hover {
+        color: $color-grey-200;
     }
 }
 
