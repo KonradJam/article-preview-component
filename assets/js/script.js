@@ -1,6 +1,6 @@
 const articlePreviewShareBtn = document.getElementById('article-preview__share');
 const socials = document.getElementById('socials');
-const isDesktop = () => window.innerWidth > 768;
+const isDesktop = () => window.innerWidth >= 768;
 
 
 const updateSocialsClass = () => {
