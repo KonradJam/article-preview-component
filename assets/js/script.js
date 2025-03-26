@@ -25,7 +25,7 @@ window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     setTimeout(() => {
         socials.style.transition = '';
-    }, 50);
+    }, 100);
 
     updateSocialsClass();
 
